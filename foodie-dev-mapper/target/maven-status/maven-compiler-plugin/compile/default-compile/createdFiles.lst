@@ -1,0 +1,15 @@
+com\itzixue\mapper\ItemsParamMapper.class
+com\itzixue\mapper\ItemsSpecMapper.class
+com\itzixue\mapper\ItemsMapper.class
+com\itzixue\mapper\UserAddressMapper.class
+com\itzixue\mapper\OrdersMapper.class
+com\itzixue\mapper\StuMapper.class
+com\itzixue\mapper\CategoryMapper.class
+com\itzixue\mapper\OrderItemsMapper.class
+com\itzixue\mapper\UsersMapper.class
+com\itzixue\my\mapper\MyMapper.class
+com\itzixue\mapper\ItemsCommentsMapper.class
+com\itzixue\mapper\ItemsMapperCustom.class
+com\itzixue\mapper\CarouselMapper.class
+com\itzixue\mapper\ItemsImgMapper.class
+com\itzixue\mapper\OrderStatusMapper.class
