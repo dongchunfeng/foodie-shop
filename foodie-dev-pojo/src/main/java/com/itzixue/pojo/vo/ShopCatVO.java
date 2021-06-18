@@ -2,6 +2,9 @@ package com.itzixue.pojo.vo;
 
 import lombok.Data;
 
+/**
+ * 购物车显示vo
+ */
 @Data
 public class ShopCatVO {
 

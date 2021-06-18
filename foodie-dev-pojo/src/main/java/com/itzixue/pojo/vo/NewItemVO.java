@@ -5,7 +5,7 @@ import lombok.Data;
 import java.util.List;
 
 /**
- * @Description 商品vo
+ * @Description 首页商品vo
  * @Author Mr.Dong <dongcf1997@163.com>
  * @Version V1.0.0
  * @Since 1.0

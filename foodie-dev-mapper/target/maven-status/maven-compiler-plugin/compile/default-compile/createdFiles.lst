@@ -10,6 +10,7 @@ com\itzixue\mapper\UsersMapper.class
 com\itzixue\my\mapper\MyMapper.class
 com\itzixue\mapper\ItemsCommentsMapper.class
 com\itzixue\mapper\ItemsMapperCustom.class
+com\itzixue\mapper\OrdersMapperCustom.class
 com\itzixue\mapper\CarouselMapper.class
 com\itzixue\mapper\ItemsImgMapper.class
 com\itzixue\mapper\OrderStatusMapper.class

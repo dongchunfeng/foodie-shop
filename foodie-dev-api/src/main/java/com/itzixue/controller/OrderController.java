@@ -82,7 +82,7 @@ public class OrderController extends BaseController {
         return HttpStatus.OK.value();
     }
 
-
+    //前端会轮训调用直到订单状态为已支付状态
     @PostMapping("/getPaidOrderInfo")
     public JSONResult getPaidOrderInfo(String orderId){
         OrderStatus orderStatus = orderService.queryOrderStatusInfo(orderId);

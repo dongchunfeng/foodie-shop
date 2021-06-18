@@ -27,4 +27,9 @@ public interface OrderService {
      */
     OrderStatus queryOrderStatusInfo(String orderId);
 
+    /**
+     * 关闭超时订单
+     */
+    void closeOrder();
+
 }
