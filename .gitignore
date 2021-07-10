@@ -1,2 +1,3 @@
 
-/foodie-dev-api/target/
+/target/
+/.idea/

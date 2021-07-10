@@ -19,9 +19,6 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/myorders")
 public class MyOrdersController extends BaseController {
 
-    @Autowired
-    private MyOrdersService myOrdersService;
-
 
     @ApiOperation(value = "查询订单列表", notes = "查询订单列表", httpMethod = "POST")
     @PostMapping("/query")
@@ -111,17 +108,6 @@ public class MyOrdersController extends BaseController {
         return JSONResult.ok();
     }
 
-    /**
-     * 用于验证用户与订单是否有联系  避免用户非法调用
-     * @return
-     */
-    private JSONResult checkUserOrder(String userId,String orderId){
-        Orders orders = myOrdersService.queryMyOrder(userId,orderId);
-        if(orders==null){
-            return JSONResult.errorMsg("订单不存在!");
-        }
-        return JSONResult.ok(orders);
-    }
 
 
 }
