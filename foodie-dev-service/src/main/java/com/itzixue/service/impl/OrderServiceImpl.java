@@ -51,6 +51,7 @@ public class OrderServiceImpl implements OrderService {
         Integer postAmount = 0;
 
         String orderId = sid.nextShort();
+        //通过用户Id和地址id查询当前用户的地址信息
         UserAddress userAddress = addressService.queryAddress(userId, addressId);
 
         //新订单保存
@@ -80,6 +81,7 @@ public class OrderServiceImpl implements OrderService {
         String[] split = itemSpecIds.split(",");
         for (String itemSpecId: split) {
             //TODO  整合redis 商品购买的数量重新从购物车中获取
+            //先设置商品数量为1
             int buyCounts = 1;
 
             //通过规格Id查询商品价格
@@ -112,6 +114,7 @@ public class OrderServiceImpl implements OrderService {
 
         newOrders.setTotalAmount(totalAmount);
         newOrders.setRealPayAmount(realPayAmount);
+        //保存订新单数据
         ordersMapper.insert(newOrders);
         //保存订单状态表
         OrderStatus waitPayOrderStatus = new OrderStatus();
