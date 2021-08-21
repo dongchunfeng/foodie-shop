@@ -7,7 +7,7 @@ import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 import org.springframework.web.filter.CorsFilter;
 
 /**
- * @Description
+ * @Description 跨域配置
  * @Author Mr.Dong <dongcf1997@163.com>
  * @Version V1.0.0
  * @Since 1.0
@@ -20,11 +20,13 @@ public class CorsConfig {
 
     }
 
-
     @Bean
     public CorsFilter corsFilter() {
         CorsConfiguration config = new CorsConfiguration();
         config.addAllowedOrigin("http://localhost:8080");
+        //添加跨域地址
+        config.addAllowedOrigin("http://106.13.196.47:8080");
+        config.addAllowedOrigin("http://106.13.196.47");
 
         //设置是否发送cookie信息
         config.setAllowCredentials(true);

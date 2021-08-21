@@ -8,7 +8,9 @@ com\itzixue\mapper\CategoryMapper.class
 com\itzixue\mapper\OrderItemsMapper.class
 com\itzixue\mapper\UsersMapper.class
 com\itzixue\my\mapper\MyMapper.class
+com\itzixue\mapper\CategoryMapperCustom.class
 com\itzixue\mapper\ItemsCommentsMapper.class
+com\itzixue\mapper\ItemsCommentsMapperCustom.class
 com\itzixue\mapper\ItemsMapperCustom.class
 com\itzixue\mapper\OrdersMapperCustom.class
 com\itzixue\mapper\CarouselMapper.class

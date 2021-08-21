@@ -1,3 +1,8 @@
 
 /target/
 /.idea/
+/foodie-dev-service/target/
+/foodie-dev-api/target/
+/foodie-dev-common/target/
+/foodie-dev-mapper/target/
+/foodie-dev-pojo/target/

@@ -50,7 +50,7 @@ public class IndexController {
         return JSONResult.ok(all);
     }
 
-    @ApiOperation(value = "获取商品子分类", notes = "获取商品子分类", httpMethod = "POST")
+    @ApiOperation(value = "获取商品子分类", notes = "获取商品子分类", httpMethod = "GET")
     @GetMapping(value = "/subCat/{rootCatId}")
     public JSONResult getCats(
             @ApiParam(name = "rootCatId", value = "一级分类Id", required = true)
@@ -63,7 +63,7 @@ public class IndexController {
         return JSONResult.ok(subCatList);
     }
 
-    @ApiOperation(value = "获取一级分类下的前6个最新商品", notes = "获取一级分类下的前6个最新商品", httpMethod = "POST")
+    @ApiOperation(value = "获取一级分类下的前6个最新商品", notes = "获取一级分类下的前6个最新商品", httpMethod = "GET")
     @GetMapping(value = "/sixNewItems/{rootCatId}")
     public JSONResult getSixNewItems(
             @ApiParam(name = "rootCatId", value = "一级分类Id", required = true)

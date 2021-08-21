@@ -11,12 +11,16 @@ com\itzixue\pojo\Items.class
 com\itzixue\pojo\Category.class
 com\itzixue\pojo\vo\MySubOrderItemVO.class
 com\itzixue\pojo\vo\SimpleItemVO.class
+com\itzixue\pojo\vo\SubCategoryVO.class
 com\itzixue\pojo\bo\AddressBO.class
+com\itzixue\pojo\bo\UserBO.class
 com\itzixue\pojo\vo\NewItemVO.class
 com\itzixue\pojo\ItemsImg.class
 com\itzixue\pojo\vo\ItemCommentVO.class
 com\itzixue\pojo\bo\SubmitOrderBO.class
 com\itzixue\pojo\bo\center\CenterUserBO.class
+com\itzixue\pojo\vo\CategoryVO.class
+com\itzixue\pojo\vo\MyCommentVO.class
 com\itzixue\pojo\vo\MyOrdersVO.class
 com\itzixue\pojo\OrderStatus.class
 com\itzixue\pojo\vo\OrderVO.class
