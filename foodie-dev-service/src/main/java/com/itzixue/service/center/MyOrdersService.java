@@ -1,6 +1,7 @@
 package com.itzixue.service.center;
 
 import com.itzixue.pojo.Orders;
+import com.itzixue.pojo.vo.OrderStatusCountsVO;
 import com.itzixue.utils.PagedGridResult;
 
 public interface MyOrdersService {
@@ -42,5 +43,22 @@ public interface MyOrdersService {
      * @return
      */
     boolean deleteOrder(String orderId,String userId);
+
+    /**
+     * 查询用户订单数
+     * @param userId
+     */
+    public OrderStatusCountsVO getOrderStatusCounts(String userId);
+
+    /**
+     * 获得分页的订单动向
+     * @param userId
+     * @param page
+     * @param pageSize
+     * @return
+     */
+    public PagedGridResult getOrdersTrend(String userId,
+                                          Integer page,
+                                          Integer pageSize);
 
 }
